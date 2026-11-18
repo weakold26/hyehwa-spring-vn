@@ -15,22 +15,22 @@
 
   var ASSETS = {
     bg: {
-      campus: 'assets/img/bg_campus.webp?v=8',
-      cafe: 'assets/img/bg_cafe.webp?v=8',
-      alley: 'assets/img/bg_alley.webp?v=8'
+      campus: 'assets/img/bg_campus.webp?v=9',
+      cafe: 'assets/img/bg_cafe.webp?v=9',
+      alley: 'assets/img/bg_alley.webp?v=9'
     },
     char: {
       yeon: {
-        base: 'assets/img/yeon.webp?v=8',
-        smile: 'assets/img/yeon_smile.webp?v=8',
-        blush: 'assets/img/yeon_blush.webp?v=8',
-        surprised: 'assets/img/yeon_surprised.webp?v=8'
+        base: 'assets/img/yeon.webp?v=9',
+        smile: 'assets/img/yeon_smile.webp?v=9',
+        blush: 'assets/img/yeon_blush.webp?v=9',
+        surprised: 'assets/img/yeon_surprised.webp?v=9'
       },
       harin: {
-        base: 'assets/img/harin.webp?v=8',
-        smile: 'assets/img/harin_smile.webp?v=8',
-        blush: 'assets/img/harin_blush.webp?v=8',
-        surprised: 'assets/img/harin_surprised.webp?v=8'
+        base: 'assets/img/harin.webp?v=9',
+        smile: 'assets/img/harin_smile.webp?v=9',
+        blush: 'assets/img/harin_blush.webp?v=9',
+        surprised: 'assets/img/harin_surprised.webp?v=9'
       }
     }
   };
@@ -468,7 +468,10 @@
   /* ---------------- HUD ---------------- */
   function updateHud() {
     var chip = $('day-chip');
-    if (chip) chip.textContent = state.chapter || '프롤로그';
+    if (chip) {
+      var ch = state.chapter || '프롤로그';
+      chip.textContent = window.innerWidth < 480 ? ch.split(' · ')[0] : ch;
+    }
     ['yeon', 'harin'].forEach(function (k) {
       var bar = document.querySelector('.aff[data-k="' + k + '"] .bar > i');
       var num = document.querySelector('.aff[data-k="' + k + '"] .num');
