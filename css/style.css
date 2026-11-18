@@ -310,6 +310,7 @@ body:not(.is-title) #dialogue { opacity: 1; transform: none; }
 
 /* ---------- choices ---------- */
 #choices {
+  order: -1;
   width: 100%;
   max-width: 720px;
   display: none;
