@@ -15,22 +15,22 @@
 
   var ASSETS = {
     bg: {
-      campus: 'assets/img/bg_campus.webp?v=11',
-      cafe: 'assets/img/bg_cafe.webp?v=11',
-      alley: 'assets/img/bg_alley.webp?v=11'
+      campus: 'assets/img/bg_campus.webp?v=12',
+      cafe: 'assets/img/bg_cafe.webp?v=12',
+      alley: 'assets/img/bg_alley.webp?v=12'
     },
     char: {
       yeon: {
-        base: 'assets/img/yeon.webp?v=11',
-        smile: 'assets/img/yeon_smile.webp?v=11',
-        blush: 'assets/img/yeon_blush.webp?v=11',
-        surprised: 'assets/img/yeon_surprised.webp?v=11'
+        base: 'assets/img/yeon.webp?v=12',
+        smile: 'assets/img/yeon_smile.webp?v=12',
+        blush: 'assets/img/yeon_blush.webp?v=12',
+        surprised: 'assets/img/yeon_surprised.webp?v=12'
       },
       harin: {
-        base: 'assets/img/harin.webp?v=11',
-        smile: 'assets/img/harin_smile.webp?v=11',
-        blush: 'assets/img/harin_blush.webp?v=11',
-        surprised: 'assets/img/harin_surprised.webp?v=11'
+        base: 'assets/img/harin.webp?v=12',
+        smile: 'assets/img/harin_smile.webp?v=12',
+        blush: 'assets/img/harin_blush.webp?v=12',
+        surprised: 'assets/img/harin_surprised.webp?v=12'
       }
     }
   };
