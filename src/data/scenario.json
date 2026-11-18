@@ -642,7 +642,8 @@
     },
     "d2_2": {
       "text": "우산은 안 가져왔다.\n강의동 처마 밑에 서서, 비가 그치기만 기다렸다.",
-      "next": "d2_3"
+      "next": "d2_3",
+      "weather": "rain"
     },
     "d2_3": {
       "show": {
@@ -650,17 +651,20 @@
         "expr": "base"
       },
       "text": "처마 끝에서 물이 떨어지는 소리.\n그 옆에, 언제 왔는지 하린 선배가 서 있었다.",
-      "next": "d2_4"
+      "next": "d2_4",
+      "weather": "rain"
     },
     "d2_4": {
       "who": "하린",
       "text": "…우산 없어?",
-      "next": "d2_5"
+      "next": "d2_5",
+      "weather": "rain"
     },
     "d2_5": {
       "who": "나",
       "text": "네.",
-      "next": "d2_6"
+      "next": "d2_6",
+      "weather": "rain"
     },
     "d2_6": {
       "show": {
@@ -669,12 +673,14 @@
       },
       "who": "하린",
       "text": "나도 없어. 우리 둘 다 비를 못 이기는 사람이네.",
-      "next": "d2_7"
+      "next": "d2_7",
+      "weather": "rain"
     },
     "d2_7": {
       "hide": true,
       "text": "그때, 빗속에서 누군가 뛰어오고 있었다.\n우산 하나를 머리 위로 얹고, 물을 튀기면서.",
-      "next": "d2_8"
+      "next": "d2_8",
+      "weather": "rain"
     },
     "d2_8": {
       "show": {
@@ -683,11 +689,13 @@
       },
       "who": "서연",
       "text": "찾았다! 너 우산 없지? 나 두 개 있어!",
-      "next": "d2_9"
+      "next": "d2_9",
+      "weather": "rain"
     },
     "d2_9": {
       "text": "…두 개는 아니고.\n하나를 접어서 둘이 쓰겠다는 뜻인 것 같았다.",
-      "next": "d2_10"
+      "next": "d2_10",
+      "weather": "rain"
     },
     "d2_10": {
       "show": {
@@ -695,12 +703,14 @@
         "expr": "base"
       },
       "text": "선배는 한 걸음 물러나, 처마 안쪽 벽에 기댔다.",
-      "next": "d2_11"
+      "next": "d2_11",
+      "weather": "rain"
     },
     "d2_11": {
       "who": "하린",
       "text": "가. 나는 여기서 기다릴게.\n비는 언젠가 그치니까.",
-      "next": "d2_12"
+      "next": "d2_12",
+      "weather": "rain"
     },
     "d2_12": {
       "show": {
@@ -732,7 +742,8 @@
           },
           "next": "d2_rw1"
         }
-      ]
+      ],
+      "weather": "rain"
     },
     "d2_um1": {
       "show": {
@@ -740,17 +751,20 @@
         "expr": "smile"
       },
       "text": "우산 하나에 둘은 좁았다.\n어깨를 맞대고 걷는 동안, 서연은 계속 말이 많았다.",
-      "next": "d2_um2"
+      "next": "d2_um2",
+      "weather": "rain"
     },
     "d2_um2": {
       "who": "서연",
       "text": "너 원래 말 적지? 나는 말 많은 사람 처음 보면 무서워.\n근데 너는 안 무서워.",
-      "next": "d2_um3"
+      "next": "d2_um3",
+      "weather": "rain"
     },
     "d2_um3": {
       "who": "나",
       "text": "왜.",
-      "next": "d2_um4"
+      "next": "d2_um4",
+      "weather": "rain"
     },
     "d2_um4": {
       "show": {
@@ -759,7 +773,8 @@
       },
       "who": "서연",
       "text": "…모르겠어. 그냥.\n네가 말 안 해도, 안 불편한 것 같아서.",
-      "next": "d2_um5"
+      "next": "d2_um5",
+      "weather": "rain"
     },
     "d2_um5": {
       "text": "우산이 자꾸 내 쪽으로 기울었다.\n서연의 오른쪽 어깨가 젖고 있었다.",
@@ -779,7 +794,8 @@
           },
           "next": "d2_um7"
         }
-      ]
+      ],
+      "weather": "rain"
     },
     "d2_um6": {
       "show": {
@@ -788,7 +804,8 @@
       },
       "who": "서연",
       "text": "야, 너 젖어. 그러다 감기 걸려.",
-      "next": "d2_um6b"
+      "next": "d2_um6b",
+      "weather": "rain"
     },
     "d2_um6b": {
       "show": {
@@ -797,16 +814,19 @@
       },
       "who": "서연",
       "text": "…이런 거, 처음이야. 누가 나한테 해주는 거.",
-      "next": "d2_mid"
+      "next": "d2_mid",
+      "weather": "rain"
     },
     "d2_um7": {
       "text": "모른 척 걸었다. 5분쯤 뒤, 서연이 조용히 말했다.",
-      "next": "d2_um7b"
+      "next": "d2_um7b",
+      "weather": "rain"
     },
     "d2_um7b": {
       "who": "서연",
       "text": "너, 어깨 젖은 거 알아?\n…모르는 척하는 거, 나도 배워야겠다.",
-      "next": "d2_mid"
+      "next": "d2_mid",
+      "weather": "rain"
     },
     "d2_ev1": {
       "show": {
@@ -814,17 +834,20 @@
         "expr": "smile"
       },
       "text": "처마 밑에 남았다.\n선배 옆엔 비가 만든 얇은 커튼이 있었다.",
-      "next": "d2_ev2"
+      "next": "d2_ev2",
+      "weather": "rain"
     },
     "d2_ev2": {
       "who": "하린",
       "text": "착한 사람. 저 애가 실망했을 텐데.",
-      "next": "d2_ev3"
+      "next": "d2_ev3",
+      "weather": "rain"
     },
     "d2_ev3": {
       "who": "나",
       "text": "선배는, 실망 안 하세요?",
-      "next": "d2_ev4"
+      "next": "d2_ev4",
+      "weather": "rain"
     },
     "d2_ev4": {
       "show": {
@@ -833,7 +856,8 @@
       },
       "who": "하린",
       "text": "…나도 사람인데.",
-      "next": "d2_ev5"
+      "next": "d2_ev5",
+      "weather": "rain"
     },
     "d2_ev5": {
       "show": {
@@ -841,17 +865,20 @@
         "expr": "base"
       },
       "text": "선배는 책을 폈다.\n우린 거의 말하지 않고 한 시간쯤 비를 들었다. 그게 이상하게 편했다.",
-      "next": "d2_ev6"
+      "next": "d2_ev6",
+      "weather": "rain"
     },
     "d2_ev6": {
       "who": "하린",
       "text": "비 오는 날엔 아무것도 안 해도 된다고 생각해.\n빗소리가 다 해주니까.",
-      "next": "d2_mid"
+      "next": "d2_mid",
+      "weather": "rain"
     },
     "d2_rw1": {
       "hide": true,
       "text": "빗속을 걸었다. 10분 만에 다 젖었다.\n우산을 쥔 손이, 생각보다 오래 허공에 있었다.",
-      "next": "d2_rw2"
+      "next": "d2_rw2",
+      "weather": "rain"
     },
     "d2_rw2": {
       "show": {
@@ -859,16 +886,19 @@
         "expr": "surprised"
       },
       "text": "10분쯤 뒤, 뒤에서 '야! 야—!' 하는 소리가 들렸다.\n그리고 우산이 머리 위로 덮였다.",
-      "next": "d2_rw3"
+      "next": "d2_rw3",
+      "weather": "rain"
     },
     "d2_rw3": {
       "who": "서연",
       "text": "미쳤어? 비 맞으면 아파.",
-      "next": "d2_rw4"
+      "next": "d2_rw4",
+      "weather": "rain"
     },
     "d2_rw4": {
       "text": "우산 한 자루에 둘은 너무 좁았는데,\n그날은 이상하게, 아무도 젖지 않은 것 같았다.",
-      "next": "d2_mid"
+      "next": "d2_mid",
+      "weather": "rain"
     },
     "d2_mid": {
       "ch": "2일차 · 저녁",
