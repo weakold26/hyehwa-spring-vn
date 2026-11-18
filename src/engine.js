@@ -15,22 +15,22 @@
 
   var ASSETS = {
     bg: {
-      campus: 'assets/img/bg_campus.webp',
-      cafe: 'assets/img/bg_cafe.webp',
-      alley: 'assets/img/bg_alley.webp'
+      campus: 'assets/img/bg_campus.webp?v=6',
+      cafe: 'assets/img/bg_cafe.webp?v=6',
+      alley: 'assets/img/bg_alley.webp?v=6'
     },
     char: {
       yeon: {
-        base: 'assets/img/yeon.webp',
-        smile: 'assets/img/yeon_smile.webp',
-        blush: 'assets/img/yeon_blush.webp',
-        surprised: 'assets/img/yeon_surprised.webp'
+        base: 'assets/img/yeon.webp?v=6',
+        smile: 'assets/img/yeon_smile.webp?v=6',
+        blush: 'assets/img/yeon_blush.webp?v=6',
+        surprised: 'assets/img/yeon_surprised.webp?v=6'
       },
       harin: {
-        base: 'assets/img/harin.webp',
-        smile: 'assets/img/harin_smile.webp',
-        blush: 'assets/img/harin_blush.webp',
-        surprised: 'assets/img/harin_surprised.webp'
+        base: 'assets/img/harin.webp?v=6',
+        smile: 'assets/img/harin_smile.webp?v=6',
+        blush: 'assets/img/harin_blush.webp?v=6',
+        surprised: 'assets/img/harin_surprised.webp?v=6'
       }
     }
   };
