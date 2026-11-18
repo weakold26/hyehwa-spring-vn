@@ -443,7 +443,7 @@ body[data-weather="rain"] .petals { opacity: 0 !important; }
 .title-bg {
   position: absolute;
   inset: 0;
-  background: url('../assets/img/bg_campus.webp?v=7') center 38% / cover no-repeat;
+  background: url('../assets/img/bg_campus.webp?v=8') center 38% / cover no-repeat;
   filter: blur(1.5px) saturate(1.02) brightness(0.64);
   transform: scale(1.06);
   animation: drift 26s ease-in-out infinite alternate;
