@@ -392,6 +392,39 @@ body:not(.is-title) #dialogue { opacity: 1; transform: none; }
   100% { opacity: 0; letter-spacing: 0.28em; }
 }
 
+/* ---------- weather: rain ---------- */
+.rain {
+  position: absolute;
+  inset: -12%;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+  background-image: repeating-linear-gradient(102deg,
+    rgba(214, 232, 255, 0.34) 0 1px,
+    rgba(214, 232, 255, 0) 1px 7px,
+    rgba(214, 232, 255, 0.18) 7px 8px,
+    rgba(214, 232, 255, 0) 8px 15px);
+  background-size: 200% 200%;
+  animation: rain-fall 0.52s linear infinite;
+  will-change: background-position;
+  pointer-events: none;
+}
+.rain-tint {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+  background: linear-gradient(180deg, rgba(48, 62, 88, 0.34), rgba(30, 40, 60, 0.26));
+  pointer-events: none;
+}
+body[data-weather="rain"] .rain { opacity: 0.5; }
+body[data-weather="rain"] .rain-tint { opacity: 1; }
+body[data-weather="rain"] .petals { opacity: 0 !important; }
+
+@keyframes rain-fall {
+  from { background-position: 0 0; }
+  to { background-position: -60px 160px; }
+}
+
 /* ---------- title screen ---------- */
 #title-screen {
   position: absolute;

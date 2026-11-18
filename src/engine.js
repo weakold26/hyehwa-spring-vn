@@ -141,7 +141,7 @@
   function loadSettings() {
     try {
       var s = JSON.parse(localStorage.getItem(KEY.settings) || 'null');
-      if (s) settings = { sound: s.sound !== false, speed: s.speed || 26 };
+      if (s) settings = { sound: s.sound !== false, speed: (typeof s.speed === 'number' ? s.speed : 26) };
     } catch (e) { /* ignore */ }
     syncSoundButton();
   }
@@ -263,6 +263,10 @@
     stage.classList.add('has-char');
   }
 
+  function setWeather(w) {
+    document.body.dataset.weather = w || 'clear';
+  }
+
   function hideChar(instant) {
     ['charA', 'charB'].forEach(function (id) {
       var el = $(id);
@@ -298,6 +302,7 @@
         showChapterCard(n.ch);
       }
       if (n.bg) setBg(n.bg);
+      if (n.weather !== undefined) setWeather(n.weather);
       if (n.hide) hideChar();
       else if (n.show) showChar(n.show.id, n.show.expr);
       if (n.eff) applyEff(n.eff);
@@ -493,6 +498,7 @@
       chapter: state.chapter,
       bg: document.body.dataset.bg || 'campus',
       char: currentChar,
+      weather: document.body.dataset.weather || 'clear',
       history: history.slice(-80),
       ts: Date.now()
     };
@@ -518,6 +524,7 @@
     currentChar = null;
     hideChar(true);
     if (data.bg) setBg(data.bg);
+    if (data.weather) setWeather(data.weather);
     if (data.char) showChar(data.char.id, data.char.expr);
     updateHud();
     closeModal();
