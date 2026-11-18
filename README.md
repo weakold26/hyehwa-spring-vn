@@ -41,6 +41,7 @@ css/style.css         4레이어 무대, 대사창, 선택지, 반응형
 src/engine.js         엔진: 타자기·분기·호감도·세이브·WebAudio
 src/data/scenario.json 시나리오 175노드 (대사 · 선택지 · 분기 · 엔딩)
 assets/img/           배경 3종 · 캐릭터 스탠딩 8종 (WebP)
+tools/mobile-preview.html  데스크톱에서 아이폰 크기로 확인하는 미리보기 페이지
 ```
 
 - 무대는 배경(크로스페이드 2겹) → 캐릭터(표정 전환) → 이펙트(꽃잎·비네트) → UI(대사창·선택지) 4레이어로 구성됩니다.
