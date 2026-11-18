@@ -200,14 +200,15 @@ body[data-bg="campus"] .petals { opacity: 0.85; }
 }
 body:not(.is-title) .aff { opacity: 1; }
 
-.aff .nm { width: 22px; letter-spacing: 0.04em; }
+.aff .nm { width: 24px; font-size: 10.5px; letter-spacing: 0.02em; text-shadow: 0 1px 6px rgba(0,0,0,0.7); }
+.affs { text-shadow: 0 1px 6px rgba(0,0,0,0.7); }
 .aff[data-k="yeon"] .nm { color: var(--sakura); }
 .aff[data-k="harin"] .nm { color: var(--blue); }
 
 .aff .bar {
   display: block;
-  width: 62px;
-  height: 4px;
+  width: 68px;
+  height: 5px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.16);
   overflow: hidden;
@@ -409,7 +410,7 @@ body:not(.is-title) #dialogue { opacity: 1; transform: none; }
   position: absolute;
   inset: 0;
   background: url('../assets/img/bg_campus.webp') center 38% / cover no-repeat;
-  filter: blur(1.5px) saturate(0.95) brightness(0.52);
+  filter: blur(1.5px) saturate(1.02) brightness(0.64);
   transform: scale(1.06);
   animation: drift 26s ease-in-out infinite alternate;
 }
@@ -420,8 +421,8 @@ body:not(.is-title) #dialogue { opacity: 1; transform: none; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(70% 55% at 50% 42%, rgba(255, 226, 236, 0.16), rgba(11, 7, 16, 0.86) 72%),
-    linear-gradient(180deg, rgba(11, 7, 16, 0.7), rgba(11, 7, 16, 0.45) 40%, rgba(11, 7, 16, 0.95));
+    radial-gradient(70% 55% at 50% 42%, rgba(255, 226, 236, 0.14), rgba(11, 7, 16, 0.8) 74%),
+    linear-gradient(180deg, rgba(11, 7, 16, 0.62), rgba(11, 7, 16, 0.32) 40%, rgba(11, 7, 16, 0.92));
 }
 
 .title-inner {
