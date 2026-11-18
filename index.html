@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<title>혜화의 봄, 4번 출구에서</title>
+<meta name="description" content="혜화역 4번 출구에서 시작되는 5일간의 캠퍼스 로맨스 비주얼 노벨.">
+<meta name="theme-color" content="#150e17">
+<meta property="og:title" content="혜화의 봄, 4번 출구에서">
+<meta property="og:description" content="3월, 혜화역 4번 출구. 벚꽃과 두 사람, 그리고 다섯 번의 선택.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading is-title" data-bg="campus">
+
+<div id="app">
+  <div id="stage">
+    <!-- layer 1 · background -->
+    <div class="bg-layer" aria-hidden="true">
+      <div class="bg" id="bgA"></div>
+      <div class="bg" id="bgB"></div>
+      <div class="bg-tint"></div>
+    </div>
+
+    <!-- layer 2 · characters -->
+    <div class="char-layer" aria-hidden="true">
+      <img class="char" id="charA" alt="">
+      <img class="char" id="charB" alt="">
+    </div>
+
+    <!-- layer 3 · effects / overlay -->
+    <div class="fx-layer" aria-hidden="true">
+      <div class="petals" id="petals"></div>
+      <div class="vignette"></div>
+      <div class="grain"></div>
+    </div>
+
+    <!-- layer 4 · interface -->
+    <div class="ui-layer">
+      <div id="topbar">
+        <button id="btn-log" class="icon" type="button" aria-label="백로그">로그</button>
+        <button id="btn-save" class="icon" type="button" aria-label="저장">저장</button>
+        <button id="btn-load" class="icon" type="button" aria-label="불러오기">로드</button>
+        <button id="btn-sound" class="icon" type="button" aria-label="효과음 켜기/끄기">♪</button>
+        <button id="btn-menu" class="icon" type="button" aria-label="설정">설정</button>
+      </div>
+
+      <div id="hud">
+        <div id="day-chip">프롤로그</div>
+        <div class="affs">
+          <div class="aff" data-k="yeon">
+            <span class="nm">서연</span>
+            <span class="bar"><i></i></span>
+            <span class="num">0</span>
+          </div>
+          <div class="aff" data-k="harin">
+            <span class="nm">하린</span>
+            <span class="bar"><i></i></span>
+            <span class="num">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="dialogue">
+        <div id="namebox"><span id="name"></span></div>
+        <div id="text"></div>
+        <div id="next-ind" aria-hidden="true">▼</div>
+      </div>
+
+      <div id="choices" role="group" aria-label="선택지"></div>
+    </div>
+
+    <div id="chapter-card" aria-live="polite"></div>
+  </div>
+
+  <!-- title -->
+  <section id="title-screen" class="on">
+    <div class="title-bg" aria-hidden="true"></div>
+    <div class="title-inner">
+      <p class="kicker">A CAMPUS ROMANCE · 5 DAYS IN HYEHWA</p>
+      <h1>혜화의 봄,<br><em>4번 출구에서</em></h1>
+      <p class="tagline">3월, 대학로. 벚꽃과 두 사람, 그리고 다섯 번의 선택.</p>
+      <nav id="title-menu">
+        <button class="btn" id="btn-start" type="button">새로 시작</button>
+        <button class="btn ghost" id="btn-continue" type="button">이어하기</button>
+        <button class="btn ghost" id="btn-gallery" type="button">
+          엔딩 도감 <span id="gallery-count">0 / 4</span>
+        </button>
+        <button class="link" id="title-sound" type="button">효과음 · 켜짐</button>
+      </nav>
+      <div class="loader"><div id="loader-bar"></div></div>
+      <p class="credit">© 2026 · HYEHWA SPRING</p>
+    </div>
+  </section>
+
+  <!-- ending -->
+  <section id="ending-screen"></section>
+
+  <!-- modal -->
+  <div id="modal" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h3 id="modal-title">백로그</h3>
+        <button id="modal-close" type="button" aria-label="닫기">✕</button>
+      </div>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+<script src="src/engine.js"></script>
+</body>
+</html>
